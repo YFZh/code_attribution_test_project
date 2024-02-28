@@ -13,5 +13,5 @@ class AsignadoFilter(admin.SimpleListFilter):
 
     @property
     def title(self):
-        return self.title
+        return self._title
     
