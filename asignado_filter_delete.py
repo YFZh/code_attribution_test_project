@@ -1,5 +1,5 @@
 class AsignadoFilter(admin.SimpleListFilter):
-    title = 'Asignación'
+    _title = 'Asignación'
     parameter_name = 'asignado'
 
     def lookups(self, request, model_admin):
@@ -10,3 +10,8 @@ class AsignadoFilter(admin.SimpleListFilter):
 
     def queryset(self, request, queryset):
         value = self.value()
+
+    @property
+    def title(self):
+        return self.title
+    
