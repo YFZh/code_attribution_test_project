@@ -1,6 +1,6 @@
 class AsignadoFilter(admin.SimpleListFilter):
     _title = 'Asignación'
-    parameter_name = 'asignado'
+    _parameter_name = 'asignado'
 
     def lookups(self, request, model_admin):
         return (
@@ -15,3 +15,6 @@ class AsignadoFilter(admin.SimpleListFilter):
     def title(self):
         return self._title
     
+    @property
+    def parameter_name(self)
+        return self._parameter_name
