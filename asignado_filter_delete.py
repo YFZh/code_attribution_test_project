@@ -11,10 +11,13 @@ class AsignadoFilter(admin.SimpleListFilter):
     def queryset(self, request, queryset):
         value = self.value()
 
+    def queryset2(self, request, queryset):
+        value = self.value()
+
     @property
     def title(self):
         return self._title
     
     @property
-    def parameter_name(self)
+    def parameter_name(self):
         return self._parameter_name
