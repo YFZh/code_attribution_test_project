@@ -169,3 +169,6 @@ class CNN(nn.Module):
             return self.features_dict
 
         return x
+    
+    def __str__(self):
+        return "CNN"
