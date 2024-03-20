@@ -3,4 +3,4 @@ class disp_fig(object):
         self.array = arr
         
         # Reshape numpy video array
-        self.video = arr.reshape(1,8,152,152)
+        self.video = arr.reshape(8,152,152)
